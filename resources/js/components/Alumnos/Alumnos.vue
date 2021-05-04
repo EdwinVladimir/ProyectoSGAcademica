@@ -10,7 +10,7 @@
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
-            <!-- <h4 class="modal-title">{{tituloModal}}</h4>
+            <h4 class="modal-title">{{tituloModal}}</h4>
             <v-btn tile color="success"><v-icon left>mdi-pencil</v-icon>Cerrar</v-btn> -->
           </div>
 
@@ -99,9 +99,9 @@ export default {
 
   mounted(){
     this.getResults();
-    //axios.get('./api/alumnos').then(response => {
-    //    this.alumno = response.data.data;
-    //});    
+    axios.get('./api/alumnos').then(response => {
+        this.alumno = response.data.data;
+    });    
   },
   	methods: {
 		// Our method to GET results from a Laravel endpoint

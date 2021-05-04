@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\ActividadevaController;
 use App\Http\Controllers\Api\AlumnoController;
 use App\Http\Controllers\Api\AulaController;
+use App\Http\Controllers\Api\CursoController;
 use App\Http\Controllers\Api\DoccapproController;
 use App\Http\Controllers\Api\DocenteController;
 use App\Http\Controllers\Api\DocexdocController;
@@ -89,6 +90,9 @@ Route::get('horario', [HorarioController::class, 'index']);
 
 // API MODELO MATERIA
 Route::get('materia', [MateriaController::class, 'index']);
+
+// API MODELO CURSO
+Route::get('curso', [CursoController::class, 'index']);
 
 // API MODELO MATRICULA
 Route::get('matricula', [MatriculaController::class, 'index']);

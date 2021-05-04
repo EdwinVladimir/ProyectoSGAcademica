@@ -24,6 +24,7 @@ class CursoStoreRequest extends FormRequest
     public function rules()
     {
         return [
+            'id' => 'required',
             'cod_cur' => 'required',
             'nom_cur' => 'required',
             'eje_cur' => 'required',

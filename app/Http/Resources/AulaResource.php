@@ -15,7 +15,8 @@ class AulaResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'cod_aul' => $this->ncod_aul,
+            'id' => $this->id,
+            'cod_aul' => $this->cod_aul,
             'num_aul' => $this->num_aul
         ];
     }

@@ -24,6 +24,7 @@ class AulaStoreRequest extends FormRequest
     public function rules()
     {
         return [
+            'id' => 'required',
             'cod_aul' => 'required',
             'num_aul' => 'required',
         ];
